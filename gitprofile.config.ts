@@ -2,14 +2,14 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'ReactRocket', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/ReactRocket/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['ReactRocket/G-Campus', 'ReactRocket/Ring-Builder-Stage'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -33,57 +33,58 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'G-Campus College',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Welcome to G-Campus! Our College Management System is designed to streamline student management with powerful functionalities. Aspiring business and IT leaders thrive in our vibrant environment, perfect for BCA, BCom, and BBA degrees. Join us at G-Campus for a dynamic learning journey!',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://img.freepik.com/free-photo/wide-angle-shot-schonbrunn-palace-vienna-austria-with-cloudy-blue-sky_181624-9096.jpg?t=st=1713985711~exp=1713989311~hmac=9d4abda13619ed92d99ae9f4272a1b3a3d519a0e0b3d40f858f066f30ea1c14a&w=900',
+          link: 'https://g-campus-ask.web.app/',
         },
         {
-          title: 'Project Name',
+          title: 'Ring Builder Stage',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Ring Builder Stage is a cutting-edge web application designed to revolutionize the way users interact with diamonds and jewelry online. The platform seamlessly integrates advanced virtual filtering capabilities with a sophisticated e-commerce system, offering users a unique and immersive shopping experience.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://img.freepik.com/premium-photo/futuristic-fusion-illuminating-brilliance-techno-ring-human-hand_1015980-29928.jpg?w=740',
+          link: 'https://ring-builder-stage.web.app/',
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
+    title: 'Portfolio of Ayush Varma',
+    description: `Junior Frontend Developer at The Diamond Port | Building Responsive UIs with React,Vue & JavaScript`,
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'dev-ayush-varma',
+    twitter: 'VarmaAyush1',
+    mastodon: 'ReactRocket@mastodon.social',
     researchGate: '',
     facebook: '',
     instagram: '',
     youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: 'ReactRocket',
+    dev: 'ReactRocket',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: 'https://ayush-varma.web.app',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'vayush798@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1YM-7yaB-mjDdKuw-eW36mL5n28uTIAmi/view?usp=drive_link', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'PHP',
     'Laravel',
     'JavaScript',
     'React.js',
+    'Vue.js',
     'Node.js',
     'Nest.js',
     'MySQL',
@@ -97,40 +98,40 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'The Diamond Port',
+      position: 'Frontend Web Developer',
+      from: 'April 2024',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://thediamondport.com/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'The Diamond Port',
+      position: 'React.js Intern',
+      from: 'Oct 2023',
+      to: 'Mar 2024',
+      companyLink: 'https://thediamondport.com/',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
+      name: 'Full Stack Web Developer',
+      body: 'Passionate about creating dynamic and user-friendly web applications using cutting-edge technologies.',
+      year: 'January 2024',
       link: 'https://example.com',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Parul University',
+      degree: 'Master of Computer Applications',
+      from: '2024',
+      to: '2026',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Udhna Citizen College',
+      degree: `'Bachelor's in Computer Applications`,
+      from: '2021',
+      to: '2024',
     },
   ],
   publications: [
@@ -232,10 +233,10 @@ const CONFIG = {
 
   // Optional Footer. Supports plain text or HTML.
   footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
+      class="text-primary" href="https://github.com/ReactRocket/ayush-varma-portfolio"
       target="_blank"
       rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+    >Passion</a> and ❤️`,
 
   enablePWA: true,
 };
