@@ -113,33 +113,50 @@ export const Header = () => {
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="book"
+                    prefixIcon="grid"
                     href="/blog"
                     label={blog.label}
                     selected={pathname.startsWith("/blog")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="book"
+                    prefixIcon="grid"
                     href="/blog"
                     selected={pathname.startsWith("/blog")}
                   />
                 </>
               )}
-              {routes["/gallery"] && (
+              {routes["/project"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
                     prefixIcon="gallery"
-                    href="/gallery"
+                    href="/project"
                     label={gallery.label}
-                    selected={pathname.startsWith("/gallery")}
+                    selected={pathname.startsWith("/project")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="gallery"
-                    href="/gallery"
-                    selected={pathname.startsWith("/gallery")}
+                    prefixIcon="project"
+                    href="/project"
+                    selected={pathname.startsWith("/project")}
+                  />
+                </>
+              )}
+              {routes["/resume"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="book"
+                    href="/resume"
+                    label={"Resume"}
+                    selected={pathname.startsWith("/resume")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="book"
+                    href="/resume"
+                    selected={pathname.startsWith("/resume")}
                   />
                 </>
               )}

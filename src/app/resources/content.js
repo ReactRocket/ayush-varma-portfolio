@@ -6,10 +6,10 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Full Stack Web Developer",
+  role: "Frontend Web Developer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Kolkata", // IANA time zone identifier
-  languages: ["English", "Hindi", "Gujarati"], // Corrected spelling of "Gujarati"
+  location: "Asia/Kolkata", // IANA time zone identifier for Surat, Gujarat
+  languages: ["English", "Hindi", "Gujarati"],
 };
 
 const newsletter = {
@@ -17,8 +17,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about web development, animations, and the integration of AI in modern frontend applications.
     </>
   ),
 };
@@ -27,22 +26,27 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/devayushvarma",
+    link: "https://github.com/ReactRocket",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://in.linkedin.com/in/devayushvarma",
+    link: "https://www.linkedin.com/in/dev-ayush-varma",
   },
   {
     name: "X",
     icon: "x",
-    link: "", // No information available
+    link: "", // No X profile provided
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:dev.ayushvarma@gmail.com",
+    link: "mailto:vayush798@gmail.com",
+  },
+  {
+    name: "Portfolio",
+    icon: "website",
+    link: "https://ayush-varma.vercel.app",
   },
 ];
 
@@ -50,11 +54,14 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Software engineer and builder</>,
+  headline: <>Frontend Web Developer</>,
   subline: (
     <>
-      I'm Ayush, a full stack web developer at <InlineCode>The Diamond Port</InlineCode>, where I craft
-      intuitive user experiences. After hours, I build my own projects.
+      I'm Ayush, a Frontend Web Developer with nearly 2 years of experience
+      building responsive, animated web applications using <InlineCode>React.js, Next.js,
+      and Shopify Liquid</InlineCode>. Proficient in <InlineCode>GSAP and AOS animations,
+      Tailwind CSS, and Bootstrap</InlineCode>. I specialize in creating advanced websites
+      with animations and AI integrations to elevate user experiences.
     </>
   ),
 };
@@ -72,16 +79,17 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com", // Placeholder link
+    link: "tel:+918732953410", // Updated with your phone number
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        I'm Ayush Varma, a passionate full stack web developer from Surat, India. Currently, I work at The
-        Diamond Port, building responsive UIs with React, Vue, and JavaScript. I enjoy transforming
-        complex challenges into simple, elegant design solutions.
+        I'm Ayush Varma, a dedicated Frontend Web Developer based in Surat, Gujarat, India.
+        Currently, I work at The Diamond Port, crafting responsive and animated web applications
+        using React.js, Next.js, and Shopify Liquid. I thrive on blending creativity with
+        technology to deliver seamless user experiences.
       </>
     ),
   },
@@ -91,21 +99,28 @@ const about = {
     experiences: [
       {
         company: "The Diamond Port",
-        timeframe: "Present",
-        role: "Full Stack Web Developer",
+        timeframe: "April 2024 - Present",
+        role: "Frontend Web Developer",
         achievements: [
           <>
-            Developed and maintained responsive web applications using React and Vue, enhancing user
-            engagement by 15%.
+            Built The Diamond Port (v2) using React.js, Tailwind CSS, and GSAP for animated
+            jewelry listings and dashboards, improving user engagement.
           </>,
           <>
-            Collaborated with design teams to implement intuitive UI components, reducing user
-            onboarding time by 20%.
+            Developed TDP Ring Builder (Shopify) with React.js and Shopify Liquid, enabling
+            seamless ring customization for customers.
+          </>,
+          <>
+            Enhanced Velar Diamonds with Shopify Liquid and GSAP for smooth animated transitions
+            in a jewelry store interface.
+          </>,
+          <>
+            Created Premexa, an e-commerce site for tea powder, using Next.js, Tailwind CSS, and AOS.
           </>,
         ],
         images: [
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/The Diamond Port.png",
             alt: "The Diamond Port Project",
             width: 16,
             height: 9,
@@ -113,17 +128,18 @@ const about = {
         ],
       },
       {
-        company: "G Campus",
-        timeframe: "Previous",
-        role: "Full Stack Web Developer",
+        company: "The Diamond Port",
+        timeframe: "October 2023 - March 2024",
+        role: "Junior Web Developer",
         achievements: [
           <>
-            Led the development of a college management system, streamlining administrative tasks
-            and improving user accessibility.
+            Developed TDP Ring Builder (WordPress) with React.js for a ring customization tool.
           </>,
           <>
-            Integrated third-party APIs to enhance system functionality, resulting in a 25% increase
-            in user satisfaction.
+            Worked on World Wide Stock Lot, a custom e-commerce platform using WordPress.
+          </>,
+          <>
+            Built Vaidehi Rayon, a textile catalog site with product listings using WordPress.
           </>,
         ],
         images: [],
@@ -135,46 +151,70 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "Veer Narmad South Gujarat University (VNSGU)",
-        description: <>Completed Integrated BCA in Web Development.</>,
+        name: "Parul University, Vadodara",
+        description: <>Pursuing Master of Computer Applications (AI/ML), Jun 2024 - Present.</>,
+      },
+      {
+        name: "Veer Narmad South Gujarat University, Surat",
+        description: <>Completed Bachelor of Computer Applications (Web Development), Jun 2021 - Apr 2024. Top 10 in Class.</>,
       },
     ],
   },
   technical: {
     display: true,
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "React.js",
-        description: <>Proficient in building dynamic web applications with React.js.</>,
+        title: "React.js & Next.js",
+        description: (
+          <>Expert in building dynamic, responsive web applications with React.js and Next.js.</>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "React.js Project",
+            src: "/images/projects/project-01/React & Next.jpg",
+            alt: "React.js & Next.js Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Vue.js",
-        description: <>Experienced in developing interactive interfaces using Vue.js.</>,
+        title: "Shopify & Wordpress",
+        description: (
+          <>Skilled in developing and customizing e-commerce solutions using Shopify and Wordpress.</>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Vue.js Project",
+            src: "/images/projects/project-01/Shopify & Wordpress.jpg",
+            alt: "Shopify And Wordpress Project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Tailwind CSS",
-        description: <>Skilled in utilizing Tailwind CSS for efficient and consistent styling.</>,
+        title: "GSAP & AOS Animations",
+        description: (
+          <>Proficient in creating smooth, engaging animations with GSAP and AOS.</>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Tailwind CSS Project",
+            src: "/images/projects/project-01/GSAP & AOS Animations.png",
+            alt: "Animations Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Tailwind CSS & Bootstrap",
+        description: (
+          <>Experienced in rapid, consistent styling with Tailwind CSS and Bootstrap.</>
+        ),
+        images: [
+          {
+            src: "/images/projects/project-01/Tailwind CSS & Bootstrap.jpg",
+            alt: "CSS Framework Project",
             width: 16,
             height: 9,
           },
@@ -186,98 +226,106 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about web development and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
   label: "Work",
   title: "My projects",
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
- 
-
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  label: "Project",
+  title: "My Projects",
+  description: `A project collection by ${person.name}`,
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
+      src: "/images/gallery/1.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://thediamondport.com"
     },
     {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
+      src: "/images/gallery/2.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://ringsofaustralia.com.au"
     },
     {
-      src: "/images/gallery/img-05.jpg",
+      src: "/images/gallery/3.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://makandcojewellers.myshopify.com"
     },
     {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
+      src: "/images/gallery/4.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://stagev2.thediamondport.com/register"
     },
     {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
+      src: "/images/gallery/5.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://www.preciouscarbon.com"
     },
     {
-      src: "/images/gallery/img-10.jpg",
+      src: "/images/gallery/6.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://premexa.in"
     },
     {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
+      src: "/images/gallery/7.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://www.moimoi.com.au/colour-lab-grown-diamonds"
     },
     {
-      src: "/images/gallery/img-13.jpg",
+      src: "/images/gallery/8.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://worldwidestocklot.com"
     },
     {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/gallery/9.png",
       alt: "image",
       orientation: "horizontal",
+      href:"https://vaidehirayon.com"
     },
+    {
+      src: "/images/gallery/10.png",
+      alt: "image",
+      orientation: "horizontal",
+      href:"https://apps.shopify.com/tdp-ring-builder"
+    },
+    {
+      src: "/images/gallery/11.png",
+      alt: "image",
+      orientation: "horizontal",
+      href:"https://wordpress.org/plugins/tdp-ring-builder"
+    },
+    {
+      src: "/images/gallery/12.png",
+      alt: "image",
+      orientation: "horizontal",
+      href:"https://g-campus-ask.web.app"
+    },
+    {
+      src: "/images/gallery/13.png",
+      alt: "image",
+      orientation: "horizontal",
+      href:"https://apex-college-ask.web.app"
+    },
+    {
+      src: "/images/gallery/14.png",
+      alt: "image",
+      orientation: "horizontal",
+      href:"https://velardiamonds.com"
+    },
+
   ],
 };
 
