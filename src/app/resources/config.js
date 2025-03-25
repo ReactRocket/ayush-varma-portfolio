@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3000";
+const baseURL = "https://ayush-varma.vercel.app";
 
 const routes = {
   "/": true,

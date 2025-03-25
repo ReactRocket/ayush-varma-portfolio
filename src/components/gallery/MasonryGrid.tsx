@@ -20,7 +20,8 @@ export default function MasonryGrid() {
       columnClassName={styles.masonryGridColumn}
     >
       {gallery.images.map((image, index) => (
-        <SmartImage
+        <a target="_blank" href={image.href} title={image.href} key={index}>
+          <SmartImage
           priority={index < 10}
           sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 33vw, 25vw"
           key={index}
@@ -30,6 +31,7 @@ export default function MasonryGrid() {
           alt={image.alt}
           className={styles.gridItem}
         />
+        </a>
       ))}
     </Masonry>
   );
