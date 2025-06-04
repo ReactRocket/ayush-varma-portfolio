@@ -8,7 +8,7 @@ const person = {
   },
   role: "Frontend Web Developer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Kolkata", // IANA time zone identifier for Surat, Gujarat
+  location: "Surat/Gujarat", // IANA time zone identifier for Surat, Gujarat
   languages: ["English", "Hindi", "Gujarati"],
 };
 
@@ -43,11 +43,11 @@ const social = [
     icon: "email",
     link: "mailto:vayush798@gmail.com",
   },
-  {
-    name: "Portfolio",
-    icon: "website",
-    link: "https://ayush-varma.vercel.app",
-  },
+  // {
+  //   name: "Portfolio",
+  //   icon: "website",
+  //   link: "https://ayush-varma.vercel.app",
+  // },
 ];
 
 const home = {

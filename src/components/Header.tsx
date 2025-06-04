@@ -14,14 +14,14 @@ type TimeDisplayProps = {
   locale?: string; // Optionally allow locale, defaulting to 'en-GB'
 };
 
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
+const TimeDisplay: React.FC<TimeDisplayProps> = ({ time,myZone="Asia/Kolkata", locale = "en-GB" }) => {
   const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
-        timeZone,
+        myZone,
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
@@ -35,7 +35,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" })
     const intervalId = setInterval(updateTime, 1000);
 
     return () => clearInterval(intervalId);
-  }, [timeZone, locale]);
+  }, [myZone, locale]);
 
   return <>{currentTime}</>;
 };
