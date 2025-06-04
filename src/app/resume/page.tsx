@@ -51,13 +51,13 @@ export default function Resume() {
         />
 
         {/* View Button */}
-        <Button
+        {/* <Button
           href="/pdf/resume.pdf" // Adjust path if needed
           target="_blank"
           rel="noopener noreferrer"
           variant="secondary"
           label="View"
-        />
+        /> */}
       </Flex>
     </Column>
   );
