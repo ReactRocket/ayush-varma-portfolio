@@ -253,12 +253,12 @@ const gallery = {
       orientation: "horizontal",
       href:"https://ringsofaustralia.com.au"
     },
-    {
-      src: "/images/gallery/3.png",
-      alt: "image",
-      orientation: "horizontal",
-      href:"https://makandcojewellers.myshopify.com"
-    },
+    // {
+    //   src: "/images/gallery/3.png",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    //   href:"https://makandcojewellers.myshopify.com"
+    // },
     {
       src: "/images/gallery/4.png",
       alt: "image",
