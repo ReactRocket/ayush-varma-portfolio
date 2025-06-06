@@ -10,18 +10,19 @@ import { routes, display } from "@/app/resources";
 import { person, home, about, blog, work, gallery } from "@/app/resources/content";
 
 type TimeDisplayProps = {
+  time?: string; // Adjust the type based on what `time` should be (e.g., string, Date, etc.)
   timeZone: string;
   locale?: string; // Optionally allow locale, defaulting to 'en-GB'
 };
 
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ time,myZone="Asia/Kolkata", locale = "en-GB" }) => {
+const TimeDisplay: React.FC<TimeDisplayProps> = ({ time,timeZone="Asia/Kolkata", locale = "en-GB" }) => {
   const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
       const options: Intl.DateTimeFormatOptions = {
-        myZone,
+        timeZone,
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
@@ -35,7 +36,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ time,myZone="Asia/Kolkata", l
     const intervalId = setInterval(updateTime, 1000);
 
     return () => clearInterval(intervalId);
-  }, [myZone, locale]);
+  }, [timeZone, locale]);
 
   return <>{currentTime}</>;
 };
