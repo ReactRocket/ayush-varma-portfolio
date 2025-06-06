@@ -22,7 +22,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ time,myZone="Asia/Kolkata", l
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const options: Intl.DateTimeFormatOptions = {
+      const options = {
         myZone,
         hour: "2-digit",
         minute: "2-digit",
