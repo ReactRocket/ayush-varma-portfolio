@@ -10,8 +10,6 @@ import { routes, display } from "@/app/resources";
 import { person, home, about, blog, work, gallery } from "@/app/resources/content";
 
 type TimeDisplayProps = {
-  time: string; // This prop is not used in the component, but kept for consistency with the original code
-  myZone?: string; // Default to 'Asia/Kolkata' if not provided
   timeZone: string;
   locale?: string; // Optionally allow locale, defaulting to 'en-GB'
 };
@@ -22,7 +20,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ time,myZone="Asia/Kolkata", l
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const options = {
+      const options: Intl.DateTimeFormatOptions = {
         myZone,
         hour: "2-digit",
         minute: "2-digit",
