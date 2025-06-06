@@ -8,7 +8,7 @@ const person = {
   },
   role: "Frontend Web Developer",
   avatar: "/images/avatar.jpg",
-  location: "Surat/Gujarat", // IANA time zone identifier for Surat, Gujarat
+  location: "Asia/Kolkata", // IANA time zone identifier for Surat, Gujarat
   languages: ["English", "Hindi", "Gujarati"],
 };
 
