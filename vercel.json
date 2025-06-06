@@ -1,8 +1,0 @@
-{
-  "build": {
-    "env": {
-      "NEXT_TYPESCRIPT_NO_CHECK": "true"
-    },
-    "command": "next build --no-lint"
-  }
-}
